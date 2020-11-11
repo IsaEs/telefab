@@ -1,0 +1,20 @@
+{
+  "name": "telefab",
+  "version": "1.0.0",
+  "description": "telecontact.me contact form plugin",
+  "main": "index.js",
+  "author": "IsaEs",
+  "license": "MIT",
+  "scripts": {
+    "serve": "http-server ./src --port=8080",
+    "uglify" : "npx uglifyjs --compress --mangle -- src/telefab.js",
+    "obsuf": "npx javascript-obfuscator src/telefab.js -o dist/telefab.min.js --config ./.obsufcator.js"
+  },
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "javascript-obfuscator": "^2.8.1",
+    "live-server": "^1.2.1",
+    "uglifyjs": "^2.4.11"
+  }
+}
